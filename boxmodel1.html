@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* #main{
+            color: blue;
+        } */
+        /* #inside p{
+            background-color: aqua;
+        } */
+
+        /* #main > p{
+            /* direct child select */
+            background-color: rgb(200, 255, 0);
+        }
+        #main + p{
+            /* next select */
+            /* background-color: rgb(151, 94, 205); */
+        }    */
+
+        /* #main ~ p{
+            background-color: bisque;
+        } */
+        /* style for a special state of an element */
+        /* a:link{
+            text-decoration: none; 
+            font-size: 30px;
+        } */
+        /* a:hover{
+            color: brown;
+            font-size: 35px;
+        } */
+
+        /* a:active{
+            color: rgb(36, 186, 200);
+        } */
+         
+        /* a:visited{
+            color: antiquewhite;
+        } */
+
+
+
+        /* alternate row color */
+        #main .odd{
+            color: aqua;
+        }
+        #main p:nth-child(even){
+            color: brown;
+        }
+
+
+
+
+        #main p::first-letter{
+            color: blue;
+            font-size: 20px;
+        }
+        #main p::first-line{
+            background-color: azure;
+        }
+        #main p::after{
+            content: "Read More";
+            color: red;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main"> <!-- div first -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi, nobis neque praesentium fuga iste magni ullam dolores odio? Vel mollitia numquam facere iusto magni velit, beatae odio, ea amet placeat sequi deleniti optio, doloremque odit fugit adipisci voluptatum earum provident quis dolore libero aliquid excepturi. 
+            <div id="inside">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit id illum tempore voluptatibus repellendus perspiciatis aliquid, aperiam optio soluta ad adipisci, reiciendis a nesciunt corrupti?
+                </p>
+            </div> <!--  inside first end -->
+        </p>
+        <p class="odd">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, facere?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sit, obcaecati minus doloremque iusto cumque.
+        </p>
+        <p class="odd">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui vero fugit incidunt beatae maiores veritatis non nulla ab voluptas voluptates.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro harum eveniet in aliquid itaque consequatur ad provident iste?
+        </p>
+    </div>  <!-- div first end -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perspiciatis amet eos esse quas iure cumque itaque deleniti numquam quam!.
+    </p>
+    <a href="">Visite my site</a>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo illum animi omnis modi dolorem odio incidunt beatae maxime reprehenderit error!
+    </p>
+</body>
+</html>

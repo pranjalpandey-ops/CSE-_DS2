@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel 2</title>
+    <style>
+        html,*{
+            box-sizing: border-box;
+        }
+        #main{
+            height: 300px;
+            width: 900px;
+            background-color: rgb(15, 72, 215);
+            margin: 0 auto;
+            border: 8px black solid;
+            display: flex;
+        }
+        #left{
+            height: 285px;
+            width: 300px;
+
+            background-color:pink;
+        }
+        #right{
+            height: 280px;
+            width: 580px;
+            background-color: yellow;
+            margin-left: 20px;
+        }
+        .rightBox{
+            height: 137px;
+            width: 580px;
+            margin-bottom: 10px;
+            background-color: green;
+        }
+        .sec2{
+            height: 145px;
+            width: 600px;
+            margin-top: 10px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+
+        </div>
+        <div id="right">
+            <div class="rightBox">
+
+            </div>
+            <div class="rightBox">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
