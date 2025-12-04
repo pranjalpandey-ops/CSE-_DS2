@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main{
+        height: 400px;
+        height: 1200px;
+        margin: 0 auto;
+        display: grid;
+        gap: 20px;
+        grid-template-rows: 150px 80px 500px 200px; 
+        background-color: rgb(244, 253, 250);
+    }
+    .box:nth-child(odd){
+        background-color: rgb(181, 59, 238);
+    }
+    .box:nth-child(even){
+        background-color: rgb(223, 51, 91);
+    }
+    #leftRight{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .left, .right{
+        background-color: rgb(43, 98, 226);
+    }
+    p{
+        font-size: 2em;
+        /* 2em = 2*16 = 32px */
+        font-size: 5vh;
+    }
+
+</style>
+<body>
+    <h1 style="text-align: center;">
+        Hello Pranjal
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur autem doloribus reiciendis corrupti tenetur consequatur in blanditiis praesentium maiores voluptas.
+    </p>
+
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box" id="leftRight">
+            <div class="left">
+                Left
+            </div>
+            <div class="right">
+                Right
+            </div>
+        </div>
+        <div class="box"></div>
+    </main>
+</body>
+</html>
