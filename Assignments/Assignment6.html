@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce WebSite</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            width: 100vw;
+            background-color: rgb(231, 231, 225);
+        }
+        h1{
+            width: 100vw;
+            color: rgb(54, 54, 52);
+        }
+        .container{
+            display: flex;
+            width: 100vh;
+            gap: 20px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        img{
+            height: 250px;
+            border-radius: 20px;
+        }
+        .pro1{
+            background-color: rgb(229, 232, 219);
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgb(60, 60, 228);
+        }
+        .pro2{
+            background-color: rgb(229, 232, 219);
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgb(60, 60, 228);
+        }
+        .pro3{
+            background-color: rgb(229, 232, 219);
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgb(60, 60, 228);
+        }
+        button{
+            background-color: rgb(197, 219, 111);
+            height: 30px;
+            width: 80px;
+            font-size: 13px;
+        }
+        .head{
+            width: 100vw;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(111, 236, 234);
+            box-shadow: 3px 10px 10px rgb(43, 125, 220);
+            border: 0.5px solid;
+        }
+        .oldPrice{
+            font-size: 12px;
+            color: red;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="head">
+        <h1>Pranjal's E-Commerce</h1>
+    </div>
+
+    <div class="container">
+        <div class="pro1">
+            <img src="Camera.jpg" alt="">
+            <p>DSLR Camera</p>
+            <p class="oldPrice"><s>₹120000</s> 25%off</p>
+            <p>₹90,000</p>
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+        </div>
+        <div class="pro2">
+            <img src="milk.jpg" alt="">
+            <p>Cow Milk 1L</p>
+            <p class="oldPrice"><s>₹500</s> 20%off</p>
+            <p>₹300</p>
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+        </div>
+        <div class="pro3">
+            <img src="iphone17.jpg" alt="">
+            <p>iPhone17</p>
+            <p class="oldPrice"><s>₹1,50,000</s> 20%off</p>
+            <p>₹70,000</p>
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
