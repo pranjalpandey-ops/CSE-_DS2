@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE PRODUCT GRID</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #ede8e8;
+            padding: 20px;
+        }
+
+        span {
+            color: #717506;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h3 {
+            color: #750615;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #e89b9b;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 65%;
+            height: 65%;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #9b0909;
+            margin: 4px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #2071c7;
+        }
+
+        /* Responsive for tablets */
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2><span><u>Electronic Items</u></span></h2>
+    <center><h3>Responsive Product Grid</h3></center>
+
+    <div class="grid">
+
+        <!-- Laptop -->
+        <div class="card">
+            <img src="https://www.digitaltrends.com/uploads/2024/07/surface-laptop-7-06-e1746774119939.jpg" alt="Laptop">
+            <h3>Laptop</h3>
+            <p>A modern processor (Intel Core i7), 16GB RAM, and a fast SSD for storage.</p>
+            <p class="price">₹79,999</p>
+        </div>
+
+        
+        <div class="card">
+            <img src="https://elver.in/cdn/shop/files/Elver_Buds_X_True_Wireless_Earbuds.png?v=1755252622" alt="Earbuds">
+            <h3>Earbuds</h3>
+            <p>High-quality audio, durable and stylish for daily use.</p>
+            <p class="price">₹5,999</p>
+        </div>
+
+        
+        <div class="card">
+            <img src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg" alt="Headphones">
+            <h3>Headphones</h3>
+            <p>Premium wireless headphones with clear audio and deep bass.</p>
+            <p class="price">₹12,999</p>
+        </div>
+
+        
+        <div class="card">
+            <img src="Camera.webp" alt="Tablet">
+            <h3>Tablet</h3>
+            <p>A sleek, portable tablet designed for smooth performance.</p>
+            <p class="price">₹49,999</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
