@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile Card</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #10a5db;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        width: 240px;
+        text-align: center;
+        padding: 18px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        background: #007bff;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 auto 12px;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .detail {
+        font-size: 14px;
+        color: #333;
+        margin: 3px 0;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Student Profile Cards</h2>
+
+<div class="container">
+
+    <div class="card">
+        <div class="avatar">PK</div>
+        <div class="name">Pranjal Kumar Pandey</div>
+        <div class="detail">B.Tech - CSEDS2</div>
+        <div class="detail">Roll No: 2025B15410022</div>
+        <div class="detail">1st Year</div>
+    </div>
+
+    <div class="card">
+        <div class="avatar">PG</div>
+        <div class="name">Parth Rastogi</div>
+        <div class="detail">B.Tech - CSEDS2</div>
+        <div class="detail">Roll No: 2025B15410165</div>
+        <div class="detail">1st Year</div>
+    </div>
+
+    <div class="card">
+        <div class="avatar">PB</div>
+        <div class="name">Pradhuman Bhardwaj</div>
+        <div class="detail">B.Tech - CSEDS2</div>
+        <div class="detail">Roll No: 2025B15410060</div>
+        <div class="detail">1st Year</div>
+    </div>
+
+</div>
+
+</body>
+</html>
